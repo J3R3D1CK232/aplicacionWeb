@@ -1,3 +1,4 @@
+<%@page import = "apis.afiliadoAPI" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,22 +16,22 @@
     <div class="leftContainer">
         <!--contenedor donde se ubicara la busqueda por proveedor--> 
         <h3>Busqueda por Proveedor</h3>
-        <form action="#" method="post">
+        <form action="consulta_proveedor.jsp" method="post">
             <div class="fila">
                 <label for="nProveedor">Nit de Proveedor:</label>
-                <input type="number" id="nProveedor" required>
+                <input type="number" name="nProveedor" required>
             </div>
             <div class="fila">
                 <label for="cAfiliado">Código de afiliado:</label>
-                <input type="number" id="cAfiliado" required>
+                <input type="number" name="cAfiliado" required>
             </div>
             <div class="fila">
                 <label for="fNacimiento">Fecha Nacimiento:</label>
-                <input type="date" id="fNacimiento" min="1920-01-01" required>
+                <input type="date" name="fNacimiento" min="1920-01-01" required>
             </div>
             <div class="fila">
                 <label for="fCobertura">Fecha Cobertura:</label>
-                <input type="date" id="fCobertura" min="1920-01-01" required>
+                <input type="date" name="fCobertura" min="1920-01-01" required>
             </div>
             <br>
             <br>
@@ -42,14 +43,14 @@
     <div class="rightContainer">
       <!--Contenedor donde se ubicara la busqueda por afiliado-->
       <h3>Busqueda por Afiliado</h3>
-      <form action="#" method="post">
+      <form action="consulta_afiliado.jsp" method="post">
         <div class="fila">
             <label for="cAfiliado">Código de afiliado</label>
-            <input type="text" id="cAfiliadoAfiliado" required>
+            <input type="text" name="cAfiliadoAfiliado" required>
         </div>
         <div class="fila">
             <label for="fNacimiento">Fecha de Nacimiento</label>
-            <input type="date" id="fNacimientoAfiliado" min="1920-01-01" required>
+            <input type="date" name="fNacimientoAfiliado" min="1920-01-01" required>
         </div>
         <br>
         <br>
